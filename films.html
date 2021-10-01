@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Films</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalizer.css">
+    <link rel="stylesheet" href="css/mobile.css"> <!-- CSS du mobile -->
+    <link rel="stylesheet" href="css/tablet.css" media="all and (min-width: 426px)"> <!-- CSS des tablettes -->
+    <link rel="stylesheet" href="css/desktop.css" media="all and (min-width: 769px)"> <!-- CSS du desktop -->
+</head>
+<body>
+<!-- header -->
+<header>
+    <!-- Menu -->
+    <div class="container-menu">
+        <a href="index.html">
+            <img src="ximages/logo_small.png" alt="logo asso">
+        </a>
+        <div id="desktop-menu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="prochainement.html">Prochainement</a></li>
+                <li><a href="films.html">Films</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <button type="button" id="icon">
+            <i class="fa fa-bars fa-2x"></i>
+        </button>
+        <div class="lang" id="lang">
+            <a href="#" id="pays">
+                <img src="ximages/flag-fr.png" alt="image pays France">
+                <div id="other">
+                    <img class="en" src="ximages/flag-en.png" alt="image pays Anlgais">
+                    <img class="es" src="ximages/flag-es.jpg" alt="image pays Espagnol">
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- .main-menu -->
+    <nav id="main-nav" class="main-nav">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="prochainement.html">Prochainement</a></li>
+            <li><a href="films.html">Films</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+<!-- Bandeau -->
+<section class="bandeau">
+    <h1>Films</h1>
+</section>
+<div class="all-section-movies">
+
+    <!-- Filtre -->
+    <section class="filters">
+        <!-- Champ de recherche -->
+        <div class="search-barre">
+            <input type="search" id="site-search" name="q" aria-label="recherche" placeholder="Recherche...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <h2>Genre</h2>
+        <div id="gender">
+            <ul>
+                <li><i class="far fa-square"></i> Action</li>
+                <li><i class="far fa-square"></i> Suspense</li>
+                <li><i class="far fa-square"></i> Horreur</li>
+            </ul>
+            <ul>
+                <li><i class="far fa-square"></i> Fantastique</li>
+                <li><i class="far fa-square"></i> Science-fiction</li>
+                <li><i class="far fa-square"></i> Comédie</li>
+            </ul>
+        </div>
+        <h2>Langue</h2>
+        <div id="language-filter">
+            <ul>
+                <li><i class="far fa-square"></i> Anglais</li>
+                <li><i class="far fa-square"></i> Espagnol</li>
+                <li><i class="far fa-square"></i> VOSTFR</li>
+                <li><i class="far fa-square"></i> Français</li>
+            </ul>
+        </div>
+        <div class="btn-filter">
+            <button>Filtrer</button>
+        </div>
+    </section>
+
+    <!-- films -->
+    <section>
+        <div class="movies-2">
+            <div class="icon-arrow-left">
+                <i class="fas fa-arrow-left fa-2x"></i>
+            </div>
+            <div class="movies-3x">
+                <figure>
+                    <img src="ximages/affiche1.jpg" alt="affiche film">
+                    <figcaption>
+                        <p>Amélie Poulain</p>
+                        <button onclick="window.location.href='detailDuFilm.html'">Plus d'info</button>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="ximages/affiche6.jpg" alt="affiche film">
+                    <figcaption>
+                        <p>Ocean Eleven</p>
+                        <button onclick="window.location.href='detailDuFilm.html'">Plus d'info</button>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="ximages/affiche7.jpg" alt="affiche film">
+                    <figcaption>
+                        <p>Halloween</p>
+                        <button onclick="window.location.href='detailDuFilm.html'">Plus d'info</button>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="ximages/affiche9.jpg" alt="affiche film">
+                    <figcaption>
+                        <p>Friday</p>
+                        <button onclick="window.location.href='detailDuFilm.html'">Plus d'info</button>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="ximages/affiche5.jpg" alt="affiche film">
+                    <figcaption>
+                        <p>The Mask</p>
+                        <button onclick="window.location.href='detailDuFilm.html'">Plus d'info</button>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="ximages/affiche4.jpg" alt="affiche film">
+                    <figcaption>
+                        <p>The green Line</p>
+                        <button onclick="window.location.href='detailDuFilm.html'">Plus d'info</button>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="icon-arrow-right fa-2x">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer id="footer-main">
+    <!-- Logo -->
+    <a href="#">
+        <img src="ximages/logo_small.png" alt="logo asso">
+    </a>
+
+    <!-- Menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="prochainement.html">Prochainement</a></li>
+            <li><a href="films.html">Films</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+<script src="js/nav.js" defer></script>
+</body>
+</html>
