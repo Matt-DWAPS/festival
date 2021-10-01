@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalizer.css">
+    <link rel="stylesheet" href="css/mobile.css"> <!-- CSS du mobile -->
+    <link rel="stylesheet" href="css/tablet.css" media="all and (min-width: 426px)"> <!-- CSS des tablettes -->
+    <link rel="stylesheet" href="css/desktop.css" media="all and (min-width: 769px)"> <!-- CSS du desktop -->
+
+
+    <meta charset="UTF-8">
+    <title>Accueil</title>
+</head>
+<body id="home">
+<!-- header -->
+<header>
+    <!-- Menu -->
+    <div class="container-menu">
+        <a href="accueil.html">
+            <img src="ximages/logo_small.png" alt="logo asso">
+        </a>
+        <div id="desktop-menu">
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="prochainement.html">Prochainement</a></li>
+                <li><a href="films.html">Films</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <button type="button" id="icon">
+            <i class="fa fa-bars fa-2x"></i>
+        </button>
+        <div class="lang" id="lang">
+            <a href="#" id="pays">
+                <img src="ximages/flag-fr.png" alt="image pays France">
+                <div id="other">
+                    <img class="en" src="ximages/flag-en.png" alt="image pays Anlgais">
+                    <img class="es" src="ximages/flag-es.jpg" alt="image pays Espagnol">
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- .main-menu -->
+    <nav id="main-nav" class="main-nav">
+        <ul>
+            <li><a href="accueil.html">Accueil</a></li>
+            <li><a href="prochainement.html">Prochainement</a></li>
+            <li><a href="films.html">Films</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+<!-- Slider -->
+<section id="slider_container">
+    <div class="slider">
+        <img class="active sliderImage" src="ximages/slider1.jpg" alt="Affiche de film">
+        <img class="sliderImage" src="ximages/slider2.jpg" alt="Affiche de film">
+        <img class="sliderImage" src="ximages/slider3.jpg" alt="Affiche de film">
+    </div>
+    <div class="cont_btn">
+        <div class="btn-nav" id="first"><i class="fas fa-arrow-left" id="first-circle"></i></div>
+        <div class="btn-nav" id="second"><i class="fas fa-arrow-right" id="second-circle"></i></div>
+    </div>
+</section>
+
+<!-- descriptif asso -->
+<section class="bandeau_accueil">
+        <h1>L'ASSOCIATION</h1>
+    <p>Créée par Jennifer Edwards, l’association festival des Films de Plein Air est une association de loi 1901, créée
+        en 1992, qui défend, depuis vingt-neuf ans, le cinéma d’auteur et la production cinématographique
+        internationale.<br/> Elle favorise l’évasion, l’immersion dans le 7ème Art et l’ouverture à d’autres cultures et
+        grammaires cinématographiques. Elle permet la découverte de nouveaux auteurs, de talents confirmés et reconnus,
+        dans leur diversité.</p>
+</section>
+
+<!-- film recent & a propos -->
+<section id="movies">
+        <h2>FILMS RÉCENT</h2>
+    <!-- Film -->
+        <figure>
+            <img src="ximages/affiche1.jpg" alt="affiche film">
+            <figcaption>
+                <button onclick="window.location.href='detailDuFilm.html'">Voir plus</button>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="ximages/affiche2.jpg" alt="affiche film">
+            <figcaption>
+                <button onclick="window.location.href='detailDuFilm.html'">Voir plus</button>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="ximages/affiche3.jpg" alt="affiche film">
+            <figcaption>
+                <button onclick="window.location.href='detailDuFilm.html'">Voir plus</button>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="ximages/affiche4.jpg" alt="affiche film">
+            <figcaption>
+                <button onclick="window.location.href='detailDuFilm.html'">Voir plus</button>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="ximages/affiche5.jpg" alt="affiche film">
+            <figcaption>
+                <button onclick="window.location.href='detailDuFilm.html'">Voir plus</button>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="ximages/affiche6.jpg" alt="affiche film">
+            <figcaption>
+                <button onclick="window.location.href='detailDuFilm.html'">Voir plus</button>
+            </figcaption>
+        </figure>
+</section>
+<section id="about">
+    <h2>A PROPOS</h2>
+    <p>L’association festival des Films de Plein Air à comme objectif premier de projeter des films d'auteur au grand
+        public, gratuitement, en plein air du 5 au 8 août au parc Monceau à Paris. Pour les auteurs, les festivals sont des lieux privilégiés d'échanges et de rencontres avec leurs pairs, le public et les professionnels, réalisateurs et les producteurs.</p>
+</section>
+<footer id="footer-main">
+    <!-- Logo -->
+    <a href="#">
+        <img src="ximages/logo_small.png" alt="logo asso">
+    </a>
+
+    <!-- Menu -->
+    <nav>
+        <ul>
+            <li><a href="accueil.html">Accueil</a></li>
+            <li><a href="prochainement.html">Prochainement</a></li>
+            <li><a href="films.html">Films</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+<script src="js/nav.js" defer></script>
+<script src="js/slider.js" defer></script>
+</body>
+</html>
