@@ -21,17 +21,21 @@
     display: none;
 }
 
-#desktop-menu{
+#main-nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 0;
+    position: static;
 }
 
-#desktop-menu > ul{
+#main-nav > ul{
     display: grid;
     grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows: none;
     grid-gap: 45px;
     text-align: center;
+    background-color: initial;
 }
 
 #lang{
@@ -176,10 +180,6 @@ img.active{
     text-align: center;
 }
 
-#prochain_films > figure > figcaption > button{
-    padding: 1.3em 9.2em;
-}
-
 /* FILMS */
 .all-section-movies{
     display: grid;
@@ -249,8 +249,4 @@ img.active{
 
 #form_resea{
     width: 65%;
-}
-
-#form1 > input, #formContact > textarea, label {
-    font-size: 1.5rem;
 }

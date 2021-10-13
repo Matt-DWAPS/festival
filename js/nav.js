@@ -1,14 +1,19 @@
 $('document').ready(function() {
 
     //Menu hamburger au Clic !
-    $("#icon").click(function () {
-        let iconHamburger = document.getElementById("main-nav");
-        if (iconHamburger.style.display === "grid") {
-            iconHamburger.style.display = "none";
+
+    let buttonHamburger = document.getElementById("icon");
+    let menu = document.getElementById("main-nav");
+
+    buttonHamburger.addEventListener('click', function (e)
+    {
+        if (menu.style.display="none"){
+            menu.style.display="grid"
         } else {
-            iconHamburger.style.display = "grid";
+            menu.style.display="none";
         }
     });
+
 
     //Menu pays au Clic !
     $("#pays").click(function () {

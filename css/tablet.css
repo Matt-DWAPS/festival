@@ -92,9 +92,3 @@ img.active{
 #form_resea{
     width: 80%;
 }
-
-/** CONTACT **/
-
-#formContact > input, #formContact > textarea, label{
-    font-size: 1.5rem;
-}
