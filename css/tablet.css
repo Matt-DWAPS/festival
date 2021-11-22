@@ -35,7 +35,7 @@ img.active{
 /** FILM RECENT **/
 
 #movies{
-    grid-template-rows: 50px repeat(6, 340px);
+    grid-template-rows: 80px repeat(6, 340px);
 }
 
 #movies > figure{

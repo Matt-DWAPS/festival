@@ -175,7 +175,8 @@ img.active{
 
 #movies{
     display: grid;
-    grid-template-rows: 40px 210px 210px;
+    grid-template-rows: 80px repeat(6, auto);
+    grid-gap: 10px;
     align-items: center;
     text-align: center;
     background-color: rgba(101,117,252,0.6);
