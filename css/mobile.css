@@ -62,7 +62,6 @@ header {
 
 #other{
     position: absolute;
-    display: none;
     right: 9px;
     top: 50px;
     border-radius: 0 0 5px 5px;
@@ -70,6 +69,7 @@ header {
     padding-right: 5px;
     padding-left: 5px;
     padding-bottom: 5px;
+    z-index: 100;
 }
 
 #other > img{
@@ -82,13 +82,15 @@ header {
 }
 
 #main-nav{
-    display: none;
     grid-template-columns: 1fr;
-    padding-top: 74px;
+    top: 73px;
     position: fixed;
     width: 100%;
-    top: 0;
     z-index: 99;
+}
+
+.d-none {
+    display: none;
 }
 
 #main-nav > ul {
@@ -110,7 +112,7 @@ nav > ul > li > a{
 /** SLIDER **/
 #slider_container{
     position: relative;
-    padding-top: 74px;
+    padding-top: 73px;
 }
 
 .slider img{
